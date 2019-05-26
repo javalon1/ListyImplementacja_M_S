@@ -6,27 +6,40 @@ import java.util.Scanner;
 
 public class Zadanie {
 
-        public static void main(String[] args) {
 
 
-            List<String> list = new ArrayList<>();
-            Scanner scanner = new Scanner(System.in);
-            while (true){
-                String linia = scanner.nextLine();
+    public static void zad1(Object object){
 
-                if (linia.equals("-")){
-                    break;
-                }
-                list.add(linia);
+        List<String> list = new ArrayList<>();
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (true){
+
+
+
+            String linia = scanner.nextLine();
+
+
+
+            if(linia.equals("-")){
+
+                break;
+
             }
-            System.out.println("Lista imion: ");
-            for (String el: list){
-                System.out.println("Imie: " + el);
-            }
 
+            list.add(linia);
 
+        }
 
+        System.out.println("LISTA IMION: ");
 
+        for (String el: list){
+
+            System.out.println("IMIĘ: " + el);
+
+        }
 
     }
+
 }
